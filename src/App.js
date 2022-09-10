@@ -1,9 +1,7 @@
 import Fullpage, { FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage'
 import { useEffect, useState } from 'react';
-import About from './Components/About';
 import About2 from './Components/About2';
 import Contact from './Components/Contact';
-import Home from './Components/Home';
 import Home2 from './Components/Home2';
 import Projects from './Components/Projects';
 import { motion } from "framer-motion"
