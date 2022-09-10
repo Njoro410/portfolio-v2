@@ -1683,7 +1683,7 @@ const About2 = ({ enter, leave }) => {
                 loop={0}
                 pauseOnHover={true}
               >
-                {data.map((crypto, id) => (
+                {/* {data.map((crypto, id) => (
                   <div key={id} className="mr-5 flex gap-">
                     <img
                       className="w-6 mr-2"
@@ -1699,7 +1699,7 @@ const About2 = ({ enter, leave }) => {
                       <AiOutlineRise color="green" />
                     )}
                   </div>
-                ))}
+                ))} */}
               </Marquee>
             </div>
             {/* Medium Devices */}
