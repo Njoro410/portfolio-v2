@@ -131,7 +131,7 @@ const Contact = () => {
       initial="hidden"
       animate={control}
       ref={observe}
-      name = "contact"
+      name="contact"
       className="relative flex flex-wrap lg:h-screen lg:items-center bg-red-400/10"
     >
       <div className="w-full px-4 py-12 lg:w-1/2 sm:px-6 lg:px-8 sm:py-16 lg:py-24">

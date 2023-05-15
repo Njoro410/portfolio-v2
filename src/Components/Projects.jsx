@@ -20,7 +20,7 @@ const projectsVariant = {
   hidden: { y: 50, opacity: 0 },
 };
 
-const Projects = ({enter,leave}) => {
+const Projects = ({ enter, leave }) => {
   const [works, setWorks] = useState([]);
 
   useEffect(() => {
@@ -30,6 +30,8 @@ const Projects = ({enter,leave}) => {
         _id,
         projectName,
         projectDesc,
+        githubLink,
+        liveLink,
         projectMockup {
           asset->{
             _id,
@@ -98,7 +100,11 @@ const Projects = ({enter,leave}) => {
     >
       <div className="grid grid-cols-12 divide-x divide-slate-800">
         <div className="col-span-1 flex items-center justify-center">
-          <h1 onMouseEnter={enter} onMouseLeave={leave} className="writing-mode-vertical text-5xl md:text-8xl md:ml-0 md:mr-6  text-shadow-lg font-Londrina">
+          <h1
+            onMouseEnter={enter}
+            onMouseLeave={leave}
+            className="writing-mode-vertical text-5xl md:text-8xl md:ml-0 md:mr-6  text-shadow-lg font-Londrina"
+          >
             PROJECTS
           </h1>
         </div>
@@ -114,7 +120,11 @@ const Projects = ({enter,leave}) => {
                     className="grid grid-cols-12 divide-x divide-slate-800 "
                   >
                     <div className="col-span-6 mt-12 ml-4 md:mt-36">
-                      <h1 onMouseEnter={enter} onMouseLeave={leave} className="text-3xl w-1 md:mt-8 md:text-6xl font-Londrina">
+                      <h1
+                        onMouseEnter={enter}
+                        onMouseLeave={leave}
+                        className="text-3xl w-1 md:mt-8 md:text-6xl font-Londrina"
+                      >
                         {project.projectName}
                       </h1>
                       <div className="text-sm flex space-x-2 text-cyan-400">
@@ -126,12 +136,18 @@ const Projects = ({enter,leave}) => {
                       <p className="font-Dosis font-semibold">
                         {project.projectDesc}
                       </p>
-                      <div className="flex gap-4 mt-2">
-                        <a href={project.projectLinks.liveLink}>
-                          <AiOutlineLink fontSize="1.5rem" />
+                      <p className="font-Dosis font-semibold cursor-text z-10">
+                        {project.githubLink}
+                      </p>
+                      <p className="font-Dosis font-semibold cursor-text">
+                        {project.liveLink}
+                      </p>
+                      <div className="flex gap-4 mt-5">
+                        <a className="cursor-pointer" href={project.liveLink}>
+                          <AiOutlineLink fontSize="1.8rem" />
                         </a>
-                        <a href={project.projectLinks.githubLink}>
-                          <AiOutlineGithub fontSize="1.5rem" />
+                        <a href={project.githubLink}>
+                          <AiOutlineGithub fontSize="1.8rem" />
                         </a>
                       </div>
                     </div>
@@ -182,8 +198,10 @@ const Projects = ({enter,leave}) => {
                   <p className="font-Dosis break-words">
                     {project.projectDesc}
                   </p>
+        
                   <div className="flex gap-4 mt-2">
                     <a href={project.projectLinks.liveLink}>
+                      
                       <AiOutlineLink fontSize="1.5rem" />
                     </a>
                     <a href={project.projectLinks.githubLink}>

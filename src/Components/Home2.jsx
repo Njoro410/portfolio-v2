@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import TypeWriterEffect from "react-typewriter-effect";
 import { useInView } from "react-cool-inview";
 import { Link } from "react-scroll";
-import { Typewriter } from "react-simple-typewriter";
+// import { Typewriter } from "react-simple-typewriter";
 
 const homeVariant = {
   visible: { y: 0, opacity: 1, transition: { duration: 1 } },
@@ -45,7 +45,7 @@ const buttonVariants = {
     x: 75,
     y: 260,
     // transitionEnd: { opacity: 1 },
-    transition: { delay: 25, duration: 2, type: "spring", stiffness: 100 },
+    transition: { delay: 5, duration: 2, type: "tween" },
   },
   initial: { x: -500, y: 260 },
 };
@@ -79,9 +79,9 @@ const Home2 = ({ enter, leave }) => {
       console.log("hidden");
     }
   }, [control, inView]);
-  const handleDone = () => {
-    alert(`Done after 5 loops!`);
-  };
+  // const handleDone = () => {
+  //   alert(`Done after 5 loops!`);
+  // };
 
   return (
     <motion.div
@@ -108,18 +108,15 @@ const Home2 = ({ enter, leave }) => {
             {/* //medium devices and above */}
             <span className="hidden md:block">
               <motion.div
-                                onMouseEnter={enter}
-                                onMouseLeave={leave}
+                onMouseEnter={enter}
+                onMouseLeave={leave}
                 variants={nameVariantmb}
                 initial="initial"
                 animate={control}
                 className="title w-full relative"
               >
                 <span className="shade"></span>
-                <h1
-
-                  className="text-9xl"
-                >
+                <h1 className="text-9xl">
                   Brian Njoroge<span></span>
                 </h1>
               </motion.div>
@@ -186,7 +183,7 @@ const Home2 = ({ enter, leave }) => {
               variants={infoVariant}
               initial="initial"
               animate={control}
-              className="font-Dosis font-semibold w-3/4 hidden md:block"
+              className="font-Dosis font-semibold w-3/4 hidden md:block mt-[3rem] ml-[6.3rem]"
             >
               <span>
                 <TypeWriterEffect
@@ -208,7 +205,7 @@ const Home2 = ({ enter, leave }) => {
               variants={infoVariantsm}
               initial="initial"
               animate={control}
-              className="font-Dosis font-semibold w-4/5 md:hidden"
+              className="font-Dosis font-semibold w-4/5 mt-12 mx-[-0.5rem] md:hidden"
             >
               <span>
                 <TypeWriterEffect
@@ -229,9 +226,9 @@ const Home2 = ({ enter, leave }) => {
               variants={buttonVariants}
               initial="initial"
               animate={control}
-              className="gap-3 font-Dosis hidden md:flex"
+              className="gap-3 font-Dosis hidden md:flex  ml-[6.3rem]"
             >
-              <a href="https://pdfhost.io/v/IPHFtgYyY_BrianNjoroge_Resume">
+              <a href="https://pdfhost.io/v/IPHFtgYyY_BrianNjoroge_Resume" target="_blank" rel="noreferrer">
                 <button className="btn btn-outline">Resume</button>
               </a>
 

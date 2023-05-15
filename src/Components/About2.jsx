@@ -301,7 +301,7 @@ const About2 = ({ enter, leave }) => {
             animate={control}
             className="font-Londrina text-5xl text-center"
           >
-            About Me
+            About Me 
           </motion.p>
           <section className="hidden  md:flex items-center justify-center">
             <svg

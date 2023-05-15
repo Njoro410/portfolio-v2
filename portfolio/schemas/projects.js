@@ -18,6 +18,16 @@ export default {
             type: 'string',
         },
         {
+            title: 'LiveLink',
+            name: 'liveLink',
+            type: 'url'
+        },
+        {
+            title: 'GithubLink',
+            name: 'githubLink',
+            type: 'url'
+        },
+        {
             title: 'Project Description',
             name: 'projectDesc',
             type: 'text',
