@@ -228,7 +228,7 @@ const Home2 = ({ enter, leave }) => {
               animate={control}
               className="gap-3 font-Dosis hidden md:flex  ml-[6.3rem]"
             >
-              <a href="https://pdfhost.io/v/IPHFtgYyY_BrianNjoroge_Resume" target="_blank" rel="noreferrer">
+              <a href="https://docs.google.com/document/d/16h8tFuzuY4_5zN2tmCAqVA3VL48QZZX7Nkmk96LteqY/edit?usp=sharing" target="_blank" rel="noreferrer">
                 <button className="btn btn-outline">Resume</button>
               </a>
 
