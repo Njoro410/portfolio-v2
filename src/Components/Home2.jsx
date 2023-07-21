@@ -73,15 +73,16 @@ const Home2 = ({ enter, leave }) => {
   useEffect(() => {
     if (inView) {
       control.start("visible");
-      console.log("visible");
+      // console.log("visible");
     } else {
       control.start("initial");
-      console.log("hidden");
+      // console.log("hidden");
     }
   }, [control, inView]);
   // const handleDone = () => {
   //   alert(`Done after 5 loops!`);
   // };
+  
 
   return (
     <motion.div
