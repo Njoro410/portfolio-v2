@@ -139,7 +139,7 @@ const About2 = ({ enter, leave }) => {
 
   if (isLoading) {
     // return <div>Loading...</div>;
-    console.log("loading");
+    // console.log("loading");
   }
   if (isError) {
     // return <div>Error! {error.message}</div>;

@@ -188,10 +188,10 @@ const Projects = ({ enter, leave }) => {
                   </p>
 
                   <div className="flex gap-4 mt-2">
-                    <a href={project.projectLinks.liveLink}>
+                    <a href={project.projectLinks.liveLink} target="_blank" rel="noreferrer">
                       <AiOutlineLink fontSize="1.5rem" />
                     </a>
-                    <a href={project.projectLinks.githubLink}>
+                    <a href={project.projectLinks.githubLink} target="_blank" rel="noreferrer">
                       <AiOutlineGithub fontSize="1.5rem" />
                     </a>
                   </div>
