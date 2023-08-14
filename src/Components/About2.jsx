@@ -9,7 +9,7 @@ import {
   SiDjango,
   SiFirebase,
   SiFlask,
-  SiMaterialui,
+  SiMui,
   SiTailwindcss,
 } from "react-icons/si";
 import {
@@ -165,7 +165,7 @@ const About2 = ({ enter, leave }) => {
       )
       .then((data) => myStack(data))
       .catch(console.error);
-  });
+  }, []);
 
   const control = useAnimation();
   const { observe, inView } = useInView({
@@ -178,10 +178,10 @@ const About2 = ({ enter, leave }) => {
   useEffect(() => {
     if (inView) {
       control.start("visible");
-      console.log(inView, "visible");
+      // console.log(inView, "visible");
     } else {
       control.start("hidden");
-      console.log("hidden");
+      // console.log("hidden");
     }
   }, [control, inView]);
 
@@ -190,6 +190,7 @@ const About2 = ({ enter, leave }) => {
       variants={aboutVariant}
       initial="hidden"
       animate={control}
+      name='bio'
       ref={observe}
       className="h-full w-full bg-red-400/10"
     >
@@ -301,7 +302,7 @@ const About2 = ({ enter, leave }) => {
             animate={control}
             className="font-Londrina text-5xl text-center"
           >
-            About Me 
+            {/* About Me */} Bio
           </motion.p>
           <section className="hidden  md:flex items-center justify-center">
             <svg
@@ -1564,34 +1565,37 @@ const About2 = ({ enter, leave }) => {
             animate={control}
             className="font-Dosis px-4 py-4 text-justify text-sm font-bold  md:hidden"
           >
-            Hey, first I'm glad you are here, I'm{" "}
-            <span className="text-amber-500"> Brian Njoroge</span> and making
-            things that thrive on the web is what I like doing. My interest in
-            Software Development started in 2020 the year of the lockdown. I
-            kept on exploring the web and realized that the universe might
-            actually be smaller compared to it.
-            <br />
-            Since then, I've been able to learn a thing or two, assisted other
-            developers on{" "}
-            <a href="https://stackoverflow.com/users/17658453/njoroge-brian">
-              stack overflow
-            </a>{" "}
-            and on{" "}
-            <a
-              href="https://www.codegrepper.com/profile/njoroge-brian"
-              className="text-amber-500 link link-hover "
-            >
-              grepper
-            </a>{" "}
-            and judging from my
-            <a href="http://" className="text-amber-500 link link-hover">
-              first portfolio
-            </a>
-            , we can agree that there's been improvement. I'm now looking for a
-            junior software development role where I'll advance and learn new
-            skills and also work with fellow developers.
-            <br />
-            Below are some of the technologies I've worked with.
+            Introducing Brian Njoroge, a skilled and dedicated fullstack
+            developer who has carved his path in the world of technology. With a
+            passion for innovation and a flair for creating seamless digital
+            experiences, Brian's expertise shines through in every project he
+            undertakes. As the driving force behind his own personal brand, he
+            is committed to pushing boundaries and leaving a lasting impact.
+            Brian's journey began with a deep-rooted fascination for coding and
+            problem-solving. His current role as a fullstack developer allows
+            him to bring his creative ideas to life by bridging the gap between
+            front-end aesthetics and back-end functionality. But Brian's
+            ambitions extend beyond the lines of code. He aspires to be a
+            catalyst for positive change, leveraging technology to enhance
+            everyday lives and foster growth within communities. Among Brian's
+            standout achievements is the successful creation of a comprehensive
+            management system for a Savings and Credit Cooperative Organization
+            (SACCO). This achievement not only showcased his technical prowess
+            but also highlighted his ability to understand complex
+            organizational needs and translate them into user-friendly
+            solutions. In the realm of artificial intelligence, Brian's
+            innovation truly shines. He has harnessed the power of machine
+            learning to develop an image classification model with the
+            remarkable ability to identify crop diseases. This pioneering
+            solution holds the potential to revolutionize agricultural
+            practices, ensuring higher yields and sustainable farming practices.
+            As Brian Njoroge continues to push the boundaries of technology and
+            chart new territories, his unwavering dedication to his craft,
+            coupled with his vision of a tech-driven future, sets him on an
+            inspiring trajectory. With a track record of transformative
+            achievements and an unyielding drive to make a difference, Brian's
+            journey is one to watch, as he paves the way for a brighter tomorrow
+            through innovation and ingenuity
           </motion.p>
           <motion.section
             variants={aboutVariantsm}
@@ -1649,7 +1653,7 @@ const About2 = ({ enter, leave }) => {
                   •Bootstrap
                 </li>
                 <li className="p-1 flex items-center">
-                  <SiMaterialui />
+                  <SiMui />
                   •Material
                 </li>
               </ol>
@@ -1690,7 +1694,10 @@ const About2 = ({ enter, leave }) => {
                       src={crypto.image}
                       alt={crypto.name}
                     />
-                    <div className="tooltip tooltip-bottom font-" data-tip={crypto.name}>
+                    <div
+                      className="tooltip tooltip-bottom font-"
+                      data-tip={crypto.name}
+                    >
                       <p>USD:{crypto.current_price}</p>
                     </div>
                     {crypto.price_change_percentage_24h < 0 ? (
@@ -1713,7 +1720,7 @@ const About2 = ({ enter, leave }) => {
                 animate={control}
                 className="font-Dosis px-4 py-4 text-xl text-justify  "
               >
-                Hey, first I'm glad you are here, I'm{" "}
+                {/* Hey, first I'm glad you are here, I'm{" "}
                 <span className="text-amber-500"> Brian Njoroge</span> and
                 making things that thrive on the web is what I like doing. My
                 interest in Software Development started in 2020 the year of the
@@ -1740,7 +1747,40 @@ const About2 = ({ enter, leave }) => {
                 for a junior software development role where I'll advance and
                 learn new skills and also work with fellow developers.
                 <br />
-                Below are some of the technologies I've worked with.
+                Below are some of the technologies I've worked with. */}
+                Introducing Brian Njoroge, a skilled and dedicated fullstack
+                developer who has carved his path in the world of technology.
+                With a passion for innovation and a flair for creating seamless
+                digital experiences, Brian's expertise shines through in every
+                project he undertakes. As the driving force behind his own
+                personal brand, he is committed to pushing boundaries and
+                leaving a lasting impact. Brian's journey began with a
+                deep-rooted fascination for coding and problem-solving. His
+                current role as a fullstack developer allows him to bring his
+                creative ideas to life by bridging the gap between front-end
+                aesthetics and back-end functionality. But Brian's ambitions
+                extend beyond the lines of code. He aspires to be a catalyst for
+                positive change, leveraging technology to enhance everyday lives
+                and foster growth within communities. Among Brian's standout
+                achievements is the successful creation of a comprehensive
+                management system for a Savings and Credit Cooperative
+                Organization (SACCO). This achievement not only showcased his
+                technical prowess but also highlighted his ability to understand
+                complex organizational needs and translate them into
+                user-friendly solutions. In the realm of artificial
+                intelligence, Brian's innovation truly shines. He has harnessed
+                the power of machine learning to develop an image classification
+                model with the remarkable ability to identify crop diseases.
+                This pioneering solution holds the potential to revolutionize
+                agricultural practices, ensuring higher yields and sustainable
+                farming practices. As Brian Njoroge continues to push the
+                boundaries of technology and chart new territories, his
+                unwavering dedication to his craft, coupled with his vision of a
+                tech-driven future, sets him on an inspiring trajectory. With a
+                track record of transformative achievements and an unyielding
+                drive to make a difference, Brian's journey is one to watch, as
+                he paves the way for a brighter tomorrow through innovation and
+                ingenuity
               </motion.p>
             </div>
             <div className="row-span-2 flex flex-row gap-3 overflow-hidden w-full">

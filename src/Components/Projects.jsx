@@ -65,10 +65,10 @@ const Projects = ({ enter, leave }) => {
   useEffect(() => {
     if (inView) {
       control.start("visible");
-      console.log(inView, "visible");
+      // console.log(inView, "visible");
     } else {
       control.start("hidden");
-      console.log("hidden");
+      // console.log("hidden");
     }
   }, [control, inView]);
 

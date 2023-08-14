@@ -30,11 +30,11 @@ const Contact = () => {
     new mapboxgl.Marker()
       .setLngLat({ lng: 36.817, lat: -1.286 })
       .addTo(map.current);
-  });
+  },[]);
 
   useEffect(() => {
     new mapboxgl.NavigationControl();
-  });
+  },[]);
 
   useEffect(() => {
     if (!map.current) return; // wait htmlFor map to initialize
@@ -43,7 +43,7 @@ const Contact = () => {
       setLat(map.current.getCenter().lat.toFixed(4));
       setZoom(map.current.getZoom().toFixed(2));
     });
-  });
+  },[]);
 
   //email
 
@@ -118,10 +118,10 @@ const Contact = () => {
   useEffect(() => {
     if (inView) {
       control.start("visible");
-      console.log(inView, "visible");
+      // console.log(inView, "visible");
     } else {
       control.start("hidden");
-      console.log("hidden");
+      // console.log("hidden");
     }
   }, [control, inView]);
 

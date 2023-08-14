@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import TypeWriterEffect from "react-typewriter-effect";
@@ -82,7 +83,6 @@ const Home2 = ({ enter, leave }) => {
   // const handleDone = () => {
   //   alert(`Done after 5 loops!`);
   // };
-  
 
   return (
     <motion.div
@@ -92,7 +92,10 @@ const Home2 = ({ enter, leave }) => {
       ref={observe}
       className="w-full h-screen grid grid-cols-12 divide-yellow-200 bg-red-400/10"
     >
+
+
       <div className="col-span-1 grid grid-rows-12 h-screen">
+
         <div className="row-span-3">
           <div className="line-in-middle h-full w-full"></div>
         </div>
@@ -229,11 +232,15 @@ const Home2 = ({ enter, leave }) => {
               animate={control}
               className="gap-3 font-Dosis hidden md:flex  ml-[6.3rem]"
             >
-              <a href="https://docs.google.com/document/d/16h8tFuzuY4_5zN2tmCAqVA3VL48QZZX7Nkmk96LteqY/edit?usp=sharing" target="_blank" rel="noreferrer">
+              <a
+                href="https://docs.google.com/document/d/16h8tFuzuY4_5zN2tmCAqVA3VL48QZZX7Nkmk96LteqY/edit?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="btn btn-outline">Resume</button>
               </a>
 
-              <Link to="contact" smooth={true} offset={500}>
+              <Link to="contact" smooth={true} offset={10500}>
                 <button className="btn btn-outline">Contact</button>
               </Link>
             </motion.span>
