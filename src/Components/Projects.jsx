@@ -169,7 +169,7 @@ const Projects = ({ enter, leave }) => {
           </Splide>
           {/* </Slider> */}
         </div>
-        <div className="col-span-10   md:hidden">
+        <div className="col-span-10   md:hidden overflow-scroll">
           {works &&
             works.map((project) => (
               <div key={project._id}>

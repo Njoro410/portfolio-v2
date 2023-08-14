@@ -241,3 +241,13 @@ body::-webkit-scrollbar {
   bottom: 0;
   pointer-events: none;
 }
+
+
+
+@media (max-width: 640px) {
+  iframe {
+    width: 240px;
+    height: 240px;
+  }
+}
+

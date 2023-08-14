@@ -25,6 +25,8 @@ const Portfolio = () => {
       // console.log("hidden");
     }
   }, [control, inView]);
+
+  
   return (
     <motion.section
       variants={contactVariants}
@@ -39,7 +41,7 @@ const Portfolio = () => {
       </p>
       <div className="w-full h-full px-4 py-12 lg:w-1/2 sm:px-6 lg:px-8 sm:py-16 lg:py-24">
         <div className="flex justify-center items-center flex-col">
-          <p className="text-4xl font-extrabold text-center font-Dosis ">
+          <p className="text-2xl md:text-4xl font-extrabold text-center font-Dosis ">
             Team Video
           </p>
           <iframe
@@ -50,8 +52,10 @@ const Portfolio = () => {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
+
+            
           ></iframe>
-          <p className="text-3xl font-extrabold text-center font-Dosis ">
+          <p className="text-xl md:text-3xl font-extrabold text-center font-Dosis ">
             <a
               target="_blank"
               className="hover:underline"
@@ -65,8 +69,8 @@ const Portfolio = () => {
       </div>
 
       <div className="w-full h-full px-4 py-12 lg:w-1/2 sm:px-6 lg:px-8 sm:py-16 lg:py-24">
-        <div className="flex justify-center items-center flex-col">
-          <p className="text-4xl font-extrabold text-center font-Dosis ">
+        <div className="flex justify-center items-center flex-col ">
+          <p className="text-2xl md:text-4xl font-extrabold text-center font-Dosis ">
             Team Slide Deck
           </p>
           <iframe
@@ -75,7 +79,7 @@ const Portfolio = () => {
             width="560"
             height="315"
           ></iframe>
-          <p className="text-3xl font-extrabold text-center font-Dosis ">
+          <p className="text-xl md:text-3xl font-extrabold text-center font-Dosis ">
             <a
               target="_blank"
               className="hover:underline"

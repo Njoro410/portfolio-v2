@@ -92,10 +92,7 @@ const Home2 = ({ enter, leave }) => {
       ref={observe}
       className="w-full h-screen grid grid-cols-12 divide-yellow-200 bg-red-400/10"
     >
-
-
       <div className="col-span-1 grid grid-rows-12 h-screen">
-
         <div className="row-span-3">
           <div className="line-in-middle h-full w-full"></div>
         </div>
@@ -232,15 +229,15 @@ const Home2 = ({ enter, leave }) => {
               animate={control}
               className="gap-3 font-Dosis hidden md:flex  ml-[6.3rem]"
             >
-              <a
+              {/* <a
                 href="https://docs.google.com/document/d/16h8tFuzuY4_5zN2tmCAqVA3VL48QZZX7Nkmk96LteqY/edit?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
                 <button className="btn btn-outline">Resume</button>
-              </a>
+              </a> */}
 
-              <Link to="contact" smooth={true} offset={10500}>
+              <Link to="contact" smooth={true} offset={-50} duration={500}>
                 <button className="btn btn-outline">Contact</button>
               </Link>
             </motion.span>
@@ -251,8 +248,10 @@ const Home2 = ({ enter, leave }) => {
               animate={control}
               className="gap-3 font-Dosis"
             >
-              <button className="btn btn-outline md:hidden">Resume</button>
-              <button className="btn btn-outline md:hidden">Contact</button>
+              {/* <button className="btn btn-outline md:hidden">Resume</button> */}
+              <Link to="contact" smooth={true} offset={-50} duration={500}>
+                <button className="btn btn-outline md:hidden">Contact</button>
+              </Link>
             </motion.span>
           </div>
         </div>

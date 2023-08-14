@@ -4,13 +4,13 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-transparent absolute top-0 left-0 z-20">
+    <div className="navbar bg-transparent fixed top-0 left-0 z-20">
       <div className="flex-1">
         <a className="btn btn-ghost normal-case text-xl">.</a>
       </div>
       <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
-          <li>
+        <ul className="menu menu-horizontal px-1 font-Dosis font-extrabold text-lg">
+          <li >
             <Link to="bio" smooth={true} offset={-50} duration={500}>
               Bio
             </Link>
