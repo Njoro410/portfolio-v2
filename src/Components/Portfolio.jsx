@@ -51,6 +51,16 @@ const Portfolio = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
+          <p className="text-3xl font-extrabold text-center font-Dosis ">
+            <a
+              target="_blank"
+              className="hover:underline"
+              rel="noreferrer"
+              href="https://www.youtube.com/embed/_Jx-5h1CMhY"
+            >
+              Click to view
+            </a>
+          </p>
         </div>
       </div>
 
@@ -61,12 +71,19 @@ const Portfolio = () => {
           </p>
           <iframe
             title="Slide deck"
-            src="https://drive.google.com/file/d/1uaPV7-dgE505GoLUIJu0A9pi34R3bd2R/view?usp=drive_link"
+            src="https://drive.google.com/file/d/1uaPV7-dgE505GoLUIJu0A9pi34R3bd2R/preview"
             width="560"
             height="315"
           ></iframe>
           <p className="text-3xl font-extrabold text-center font-Dosis ">
-            <a target="_blank" className="hover:underline" rel="noreferrer" href="https://drive.google.com/file/d/1uaPV7-dgE505GoLUIJu0A9pi34R3bd2R/view?usp=drive_link">Click to view</a>
+            <a
+              target="_blank"
+              className="hover:underline"
+              rel="noreferrer"
+              href="https://drive.google.com/file/d/1uaPV7-dgE505GoLUIJu0A9pi34R3bd2R/view?usp=drive_link"
+            >
+              Click to view
+            </a>
           </p>
         </div>
       </div>
