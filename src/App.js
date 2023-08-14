@@ -58,7 +58,7 @@ function App() {
 
   return (
 
-    <div data-theme='luxury' className='absolute' >
+    <div data-theme='luxury' >
       {/* <BrowserRouter> */}
       <motion.div variants={variants} animate={cursorVariant} className='cursor' />
       <Navbar />

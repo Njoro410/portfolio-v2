@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-transparent relative">
+    <div className="navbar bg-transparent absolute top-0 left-0 z-20">
       <div className="flex-1">
         <a className="btn btn-ghost normal-case text-xl">.</a>
       </div>
