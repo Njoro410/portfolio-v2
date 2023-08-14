@@ -47,8 +47,6 @@ const Projects = ({ enter, leave }) => {
       .catch(console.error);
   }, []);
 
-
-
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const rotateX = useTransform(y, [-100, 100], [60, -60]);
@@ -80,12 +78,12 @@ const Projects = ({ enter, leave }) => {
       animate={control}
       className="h-screen w-screen flex justify-center items-center bg-red-400/10"
     >
-      <div className="grid grid-cols-12 divide-x divide-slate-800">
+      <div className="grid grid-cols-12 hidden:divide-x md:divide-x divide-slate-800 ">
         <div className="col-span-1 flex items-center justify-center">
           <h1
             onMouseEnter={enter}
             onMouseLeave={leave}
-            className="writing-mode-vertical text-5xl md:text-8xl md:ml-0 md:mr-6  text-shadow-lg font-Londrina"
+            className="writing-mode-vertical hidden md:block text-5xl md:text-8xl md:ml-0 md:mr-6  text-shadow-lg font-Londrina"
           >
             PROJECTS
           </h1>
@@ -167,37 +165,94 @@ const Projects = ({ enter, leave }) => {
                 </SplideSlide>
               ))}
           </Splide>
-          {/* </Slider> */}
         </div>
-        <div className="col-span-10   md:hidden overflow-scroll">
-          {works &&
-            works.map((project) => (
-              <div key={project._id}>
-                <div className="mt-2">
-                  <h1 className="text-3xl md:mt-8 md:text-6xl font-Londrina ">
-                    {project.projectName}
-                  </h1>
-                  <div className="text-sm flex space-x-2 text-emerald-600">
-                    {project.techStack.map((item, id) => (
-                      <p key={id}>{item}</p>
-                    ))}
-                  </div>
 
-                  <p className="font-Dosis break-words">
-                    {project.projectDesc}
-                  </p>
+        {/* //small devices */}
 
-                  <div className="flex gap-4 mt-2">
-                    <a href={project.projectLinks.liveLink} target="_blank" rel="noreferrer">
-                      <AiOutlineLink fontSize="1.5rem" />
-                    </a>
-                    <a href={project.projectLinks.githubLink} target="_blank" rel="noreferrer">
-                      <AiOutlineGithub fontSize="1.5rem" />
-                    </a>
+        <div className="col-span-10  md:hidden">
+          <Splide
+            options={{
+              // Customize Splide options here
+              perPage: 1,
+              type: "loop",
+              // Add any other options you need
+            }}
+          >
+            {works &&
+              works.map((project) => (
+                <SplideSlide key={project._id} className="h-screen w-screen ">
+                  <div key={project._id} className=" h-full w-full">
+                    <motion.div
+                      initial={{ y: 12, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ duration: 2 }}
+                      className="  flex flex-col"
+                    >
+                      <p className="font-Londrina text-3xl text-center h-full w-full">
+                        Projects
+                      </p>
+                      <div className=" mt-10 ml-0  ">
+                        <h1
+                          onMouseEnter={enter}
+                          onMouseLeave={leave}
+                          className="text-3xl w-full md:mt-8 md:text-6xl font-Londrina"
+                        >
+                          {project.projectName}
+                        </h1>
+                        <div className="text-sm w-full flex space-x-2 text-cyan-400">
+                          {project.techStack.map((item, id) => (
+                            <p className="w-full" key={id}>
+                              {item}
+                            </p>
+                          ))}
+                        </div>
+
+                        <div className="w-72">
+                          <p className="font-Dosis  text-justify text-sm font-bold  md:hidden">
+                            {project.projectDesc}
+                          </p>
+                        </div>
+
+                        <div className="flex gap-4 mt-5">
+                          <a className="cursor-pointer" href={project.liveLink}>
+                            <AiOutlineLink fontSize="1.8rem" />
+                          </a>
+                          <a href={project.githubLink}>
+                            <AiOutlineGithub fontSize="1.8rem" />
+                          </a>
+                        </div>
+                      </div>
+                      <div className=" flex items-center justify-center mt-12 ">
+                        <h1 className="absolute">You found the Easter egg</h1>
+                        <h1 className="absolute mt-12">code:5652</h1>
+                        <motion.img
+                          style={{
+                            x: x,
+                            y: y,
+                            rotateX: rotateX,
+                            rotateY: rotateY,
+                            // cursor: "grab",
+                          }}
+                          drag
+                          dragConstraints={{
+                            top: 0,
+                            right: 0,
+                            bottom: 0,
+                            left: 0,
+                          }}
+                          dragElastic={0.6}
+                          whileTap={{ cursor: "grabbing" }}
+                          className="relative"
+                          src={project.projectMockup.asset.url}
+                          alt={project.projectName}
+                          data-splide-lazy={project.projectMockup.asset.url}
+                        />
+                      </div>
+                    </motion.div>
                   </div>
-                </div>
-              </div>
-            ))}
+                </SplideSlide>
+              ))}
+          </Splide>
         </div>
       </div>
       <div></div>
