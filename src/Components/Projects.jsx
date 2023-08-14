@@ -76,7 +76,7 @@ const Projects = ({ enter, leave }) => {
       variants={projectsVariant}
       initial="hidden"
       animate={control}
-      className="h-screen w-screen flex justify-center items-center bg-red-400/10"
+      className="h-screen w-full overflow-x-hidden flex justify-center items-center bg-red-400/10"
     >
       <div className="grid grid-cols-12 hidden:divide-x md:divide-x divide-slate-800 ">
         <div className="col-span-1 flex items-center justify-center">
@@ -180,7 +180,7 @@ const Projects = ({ enter, leave }) => {
           >
             {works &&
               works.map((project) => (
-                <SplideSlide key={project._id} className="h-screen w-screen ">
+                <SplideSlide key={project._id} className="h-screen w-full ">
                   <div key={project._id} className=" h-full w-full">
                     <motion.div
                       initial={{ y: 12, opacity: 0 }}

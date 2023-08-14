@@ -34,7 +34,7 @@ const Portfolio = () => {
       animate={control}
       ref={observe}
       name="portfolio"
-      className="relative flex flex-wrap lg:h-screen lg:items-center bg-red-400/10"
+      className=" flex flex-wrap w-full lg:h-screen lg:items-center bg-red-400/10"
     >
       <p className="font-Londrina text-5xl text-center w-full mt-12">
         Portfolio

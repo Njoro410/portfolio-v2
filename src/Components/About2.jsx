@@ -192,7 +192,7 @@ const About2 = ({ enter, leave }) => {
       animate={control}
       name='bio'
       ref={observe}
-      className="h-full w-full bg-red-400/10"
+      className="h-full w-full bg-red-400/10 overflow-x-hidden"
     >
       <div className="grid h-full grid-cols-12  md:grid md:grid-cols-12">
         <div className="col-span-1 flex justify-center items-center flex-col space-y-4 h-full ">
