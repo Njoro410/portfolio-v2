@@ -61,7 +61,7 @@ function App() {
     <div data-theme='luxury' >
       {/* <BrowserRouter> */}
       <motion.div variants={variants} animate={cursorVariant} className='cursor' />
-      <Navbar />
+      {/* <Navbar /> */}
 
 
       {/* <Fullpage>
