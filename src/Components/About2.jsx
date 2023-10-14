@@ -1565,37 +1565,11 @@ const About2 = ({ enter, leave }) => {
             animate={control}
             className="font-Dosis px-4 py-4 text-justify text-sm font-bold  md:hidden"
           >
-            Introducing Brian Njoroge, a skilled and dedicated fullstack
-            developer who has carved his path in the world of technology. With a
-            passion for innovation and a flair for creating seamless digital
-            experiences, Brian's expertise shines through in every project he
-            undertakes. As the driving force behind his own personal brand, he
-            is committed to pushing boundaries and leaving a lasting impact.
-            Brian's journey began with a deep-rooted fascination for coding and
-            problem-solving. His current role as a fullstack developer allows
-            him to bring his creative ideas to life by bridging the gap between
-            front-end aesthetics and back-end functionality. But Brian's
-            ambitions extend beyond the lines of code. He aspires to be a
-            catalyst for positive change, leveraging technology to enhance
-            everyday lives and foster growth within communities. Among Brian's
-            standout achievements is the successful creation of a comprehensive
-            management system for a Savings and Credit Cooperative Organization
-            (SACCO). This achievement not only showcased his technical prowess
-            but also highlighted his ability to understand complex
-            organizational needs and translate them into user-friendly
-            solutions. In the realm of artificial intelligence, Brian's
-            innovation truly shines. He has harnessed the power of machine
-            learning to develop an image classification model with the
-            remarkable ability to identify crop diseases. This pioneering
-            solution holds the potential to revolutionize agricultural
-            practices, ensuring higher yields and sustainable farming practices.
-            As Brian Njoroge continues to push the boundaries of technology and
-            chart new territories, his unwavering dedication to his craft,
-            coupled with his vision of a tech-driven future, sets him on an
-            inspiring trajectory. With a track record of transformative
-            achievements and an unyielding drive to make a difference, Brian's
-            journey is one to watch, as he paves the way for a brighter tomorrow
-            through innovation and ingenuity
+            I am Brian Njoroge, a highly skilled full-stack developer renowned for my commitment to technological innovation and my knack for crafting seamless digital experiences. My journey began with a deep-rooted passion for coding and problem-solving, and I currently excel as a full-stack developer, bridging the gap between front-end aesthetics and back-end functionality. Yet, my ambitions extend beyond code as I aspire to be a force for positive change, leveraging technology to enhance lives and foster community growth.
+
+            One of my standout achievements is the creation of a comprehensive management system for a Savings and Credit Cooperative Organization (SACCO). This accomplishment not only showcased my technical prowess but also my ability to translate complex organizational needs into user-friendly solutions. In the realm of artificial intelligence, my innovation truly shines. I harnessed the power of machine learning to develop an image classification model with the remarkable ability to identify crop diseases, potentially revolutionizing agricultural practices.
+
+            I continue to push the boundaries of technology and chart new territories, guided by my unwavering dedication to my craft and a vision of a tech-driven future. With a track record of transformative achievements and a resolute drive to make a difference, my journey is one to watch as I lead the way toward a brighter tomorrow through innovation and ingenuity.
           </motion.p>
           <motion.section
             variants={aboutVariantsm}
@@ -1748,39 +1722,11 @@ const About2 = ({ enter, leave }) => {
                 learn new skills and also work with fellow developers.
                 <br />
                 Below are some of the technologies I've worked with. */}
-                Introducing Brian Njoroge, a skilled and dedicated fullstack
-                developer who has carved his path in the world of technology.
-                With a passion for innovation and a flair for creating seamless
-                digital experiences, Brian's expertise shines through in every
-                project he undertakes. As the driving force behind his own
-                personal brand, he is committed to pushing boundaries and
-                leaving a lasting impact. Brian's journey began with a
-                deep-rooted fascination for coding and problem-solving. His
-                current role as a fullstack developer allows him to bring his
-                creative ideas to life by bridging the gap between front-end
-                aesthetics and back-end functionality. But Brian's ambitions
-                extend beyond the lines of code. He aspires to be a catalyst for
-                positive change, leveraging technology to enhance everyday lives
-                and foster growth within communities. Among Brian's standout
-                achievements is the successful creation of a comprehensive
-                management system for a Savings and Credit Cooperative
-                Organization (SACCO). This achievement not only showcased his
-                technical prowess but also highlighted his ability to understand
-                complex organizational needs and translate them into
-                user-friendly solutions. In the realm of artificial
-                intelligence, Brian's innovation truly shines. He has harnessed
-                the power of machine learning to develop an image classification
-                model with the remarkable ability to identify crop diseases.
-                This pioneering solution holds the potential to revolutionize
-                agricultural practices, ensuring higher yields and sustainable
-                farming practices. As Brian Njoroge continues to push the
-                boundaries of technology and chart new territories, his
-                unwavering dedication to his craft, coupled with his vision of a
-                tech-driven future, sets him on an inspiring trajectory. With a
-                track record of transformative achievements and an unyielding
-                drive to make a difference, Brian's journey is one to watch, as
-                he paves the way for a brighter tomorrow through innovation and
-                ingenuity
+            I am Brian Njoroge, a highly skilled full-stack developer renowned for my commitment to technological innovation and my knack for crafting seamless digital experiences. My journey began with a deep-rooted passion for coding and problem-solving, and I currently excel as a full-stack developer, bridging the gap between front-end aesthetics and back-end functionality. Yet, my ambitions extend beyond code as I aspire to be a force for positive change, leveraging technology to enhance lives and foster community growth.
+
+One of my standout achievements is the creation of a comprehensive management system for a Savings and Credit Cooperative Organization (SACCO). This accomplishment not only showcased my technical prowess but also my ability to translate complex organizational needs into user-friendly solutions. In the realm of artificial intelligence, my innovation truly shines. I harnessed the power of machine learning to develop an image classification model with the remarkable ability to identify crop diseases, potentially revolutionizing agricultural practices.
+
+I continue to push the boundaries of technology and chart new territories, guided by my unwavering dedication to my craft and a vision of a tech-driven future. With a track record of transformative achievements and a resolute drive to make a difference, my journey is one to watch as I lead the way toward a brighter tomorrow through innovation and ingenuity.
               </motion.p>
             </div>
             <div className="row-span-2 flex flex-row gap-3 overflow-hidden w-full">

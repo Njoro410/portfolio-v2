@@ -74,7 +74,7 @@ function App() {
             <FullpageSection> */}
       <About2 enter={textEnter} leave={textLeave} />
       <Portfolio enter={textEnter} leave={textLeave}/>
-      <ElevatorPitch enter={textEnter} leave={textLeave}/>
+      {/* <ElevatorPitch enter={textEnter} leave={textLeave}/>*/}
       {/* </FullpageSection>
             <FullpageSection> */}
       <Projects enter={textEnter} leave={textLeave} />
