@@ -145,6 +145,7 @@ const Home2 = ({ enter, leave }) => {
                       "Frontend developer",
                       "backend developer",
                       "FullStack developer",
+                      "Learn CPR and the Heimlich Maneuver"
                     ]}
                     multiTextDelay={2000}
                     typeSpeed={100}
