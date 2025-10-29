@@ -17,7 +17,7 @@ const nameVariantsm = {
 };
 
 const nameVariantmb = {
-  visible: { x: -380, y: -100, transition: { delay: 5, duration: 2 } },
+  visible: { x: -580, y: -100, transition: { delay: 5, duration: 2 } },
   initial: { x: 0, y: 0 },
 };
 
@@ -46,7 +46,7 @@ const buttonVariants = {
     x: 75,
     y: 260,
     // transitionEnd: { opacity: 1 },
-    transition: { delay: 5, duration: 2, type: "tween" },
+    transition: { delay: 15, duration: 2, type: "tween" },
   },
   initial: { x: -500, y: 260 },
 };
@@ -185,7 +185,7 @@ const Home2 = ({ enter, leave }) => {
               variants={infoVariant}
               initial="initial"
               animate={control}
-              className="font-Dosis font-semibold w-3/4 hidden md:block mt-[3rem] ml-[6.3rem]"
+              className="font-Dosis font-semibold w-3/4 hidden md:block mt-[12rem] ml-[6.8rem]"
             >
               <span>
                 <TypeWriterEffect
@@ -228,7 +228,7 @@ const Home2 = ({ enter, leave }) => {
               variants={buttonVariants}
               initial="initial"
               animate={control}
-              className="gap-3 font-Dosis hidden md:flex  ml-[6.3rem]"
+              className="gap-3 font-Dosis hidden md:flex  ml-[6.8rem] mt-5"
             >
               {/* <a
                 href="https://docs.google.com/document/d/16h8tFuzuY4_5zN2tmCAqVA3VL48QZZX7Nkmk96LteqY/edit?usp=sharing"
@@ -238,7 +238,7 @@ const Home2 = ({ enter, leave }) => {
                 <button className="btn btn-outline">Resume</button>
               </a> */}
 
-              <Link to="contact" smooth={true} offset={-50} duration={500}>
+              <Link to="contact" smooth={true} offset={-45} duration={500}>
                 <button className="btn btn-outline">Contact</button>
               </Link>
             </motion.span>
